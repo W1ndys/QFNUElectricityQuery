@@ -33,7 +33,7 @@ python BalanceAlertManager.py
 
 每次运行脚本时，会检查当前余额是否低于 30 元，如果低于 30 元，则发送提醒。你可以部署在服务器上，每天定时运行。
 
-如果你想调整提醒的阈值，可以修改 BalanceAlertManager.py 中的 threshold 变量。
+如果你想调整提醒的阈值，可以修改 [BalanceAlertManager.py](BalanceAlertManager.py) 中的 [threshold](https://github.com/W1ndys/QFNUElectricityQuery/blob/833f35071d9cb928e63dfd6d0fb945f0962802c5/BalanceAlertManager.py#L17) 变量。
 
 ```python
 class BalanceAlertManager:
