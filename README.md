@@ -32,3 +32,21 @@ python BalanceAlertManager.py
 ```
 
 每次运行脚本时，会检查当前余额是否低于 30 元，如果低于 30 元，则发送提醒。你可以部署在服务器上，每天定时运行。
+
+如果你想调整提醒的阈值，可以修改 BalanceAlertManager.py 中的 threshold 变量。
+
+```python
+class BalanceAlertManager:
+    def __init__(self, balance):
+        # 阈值
+        self.threshold = 30
+        self.balance = float(balance)
+```
+
+## openID 获取方法
+
+1. 打开微信，进入“Qsd 学生公寓”公众号
+2. 点击下方菜单栏
+3. 点击右上角
+4. 复制链接，得到一个形如`http://wechat.sdkdch.cn/h5/?openId=xxxxxxxxxxxxxxxxxx`的链接
+5. 将链接中的`http://wechat.sdkdch.cn/h5/?openId=xxxxxxxxxxxxxxxxxx`中的`openId`后面的内容作为`OPEN_ID`的值
