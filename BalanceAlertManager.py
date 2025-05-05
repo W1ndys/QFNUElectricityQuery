@@ -37,7 +37,7 @@ if __name__ == "__main__":
         )
     else:
         print(f"余额高于{balance_alert_manager.threshold}元（{balance}元），不发送提醒")
-        feishu.feishu(
-            f"宿舍电费余额高于{balance_alert_manager.threshold}元",
-            f"余额为{balance}元",
-        )
+        # feishu.feishu(
+        #     f"宿舍电费余额高于{balance_alert_manager.threshold}元",
+        #     f"余额为{balance}元",
+        # )
